@@ -1,41 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Webpage</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
+@media (min-width: 576px) { ... }
 
+<body>
+    <div class="container-sm">
+        <div class="container p-3 my-3 border" style="background-color: rgb(152, 146, 158) ;">
 
-<body >
-    <div class="container p-3 my-3 border" style="background-color: rgb(152, 146, 158) ;">
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" style="color: rgb(255, 255, 255);">
+                    <h3>Tori Mchenry</h3>
+                </a>
+
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                            <div class="btn-group btn-light" role="group" aria-label="First group">
+                                <button type="button" class="btn btn-light"><a href="./index.html">Home</a></button>
+                                <button type="button" class="btn btn-light"><a href="./Portfolio.html">My
+                                        Portfolio</a></button>
+                                <button type="button" class="btn btn-light"><a href="./contact.html">Contact
+                                        Me</a></button>
+
+            </nav>
+
+            <div class="container-fluid">
+                <h3>About Me</h3>
+                <p>My name is Tori, I've lived all over the West size of Phoenix, I am currenlty living in Ahwatukee.
+                     I Own a small Orange car that has a manual Transmision that my Mother made me learn.
+                     And my favorite little pooch in my life is this floppy boy, Bello.
+                     </p>
+                <div class="row">
+                  <div class="col-sm-4"><img src="./.img/me.jpg" style="width: 200px;" alt="selfie"></div>
+                  <div class="col-sm-4"> <img src="./.img/myCar.png" style="width: 300px;" alt="chevySonic"></div>
+                  <div class="col-sm-4"><img src="./.img/bello.png" style="width: 250px;" alt="myDog"></div>
+                  
+                </div>
+              </div>
         
-        <nav class="navbar navbar-light">
-            <a class="navbar-brand" style="color: rgb(255, 255, 255);"><h3>Tori Mchenry</h3></a>
-        
-        <!-- Links -->
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                    <div class="btn-group btn-light" role="group" aria-label="First group">
-                      <button type="button" class="btn btn-light"><a href ="./index.html">Home</a></button>
-                      <button type="button" class="btn btn-light"><a href ="./Portfolio.html">My Portfolio</a></button>
-                      <button type="button" class="btn btn-light"><a href ="./contact.html">Contact Me</a></button>
-        
-        </nav>
-
-
-      <div class="jumbotron jumbotron-fluid" style="background-color: rgb(255, 255, 255);">
-        <div class="container">
-            <img src="./me.jpg" style="width: 200px;" alt="selfie">
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
         </div>
     </div>
 
 
 
 
-
 </body>
+
 </html>

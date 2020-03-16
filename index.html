@@ -2,55 +2,119 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <title>CSS Template</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+      
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: rgb(192, 187, 197);
+            padding: 20px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        /* darker section box to the right*/
+        nav {
+            float: right;
+            width: 500px;
+            height: 400px;
+            background: rgb(115, 105, 124);
+            padding: 20px;
+        }
+
+        /*the first top bar*/
+        nav ul {
+            float: right;
+            padding: 0;
+        }
+
+        /*bottom fake row to clear space*/
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /*Style the footer */
+        footer {
+            background-color: rgb(192, 187, 197);
+            padding: 25px;
+            text-align: center;
+            color: white;
+        }
+
+        /*moble format */
+        @media (max-width: 600px) {
+            nav {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+    
 </head>
+<div class="container-sm">
 
-
-<body>
-    <div class="container-sm">
-        <div class="container p-3 my-3 border" style="background-color: rgb(192, 187, 197) ;">
-
-            <nav class="navbar navbar-light">
-                <a class="navbar-brand" style="color: rgb(255, 255, 255);">
-                    <h2>Tori Mchenry</h2>
-                </a>
-
-                
+    <body>
+        <div class="container-sm">
+            <div style="float: right;">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <li class="nav-item;">
                         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                             <div class="btn-group btn-light" role="group" aria-label="First group">
                                 <button type="button" class="btn btn-light"><a href="./index.html">Home</a></button>
-                                <button type="button" class="btn btn-light"><a href="./Portfolio.html">My Portfolio</a></button>
-                                <button type="button" class="btn btn-light"><a href="./contact.html">Contact Me</a></button>
+                                <button type="button" class="btn btn-light"><a href="./Portfolio.html">My
+                                        Portfolio</a></button>
+                                <button type="button" class="btn btn-light"><a href="./contact.html">Contact
+                                        Me</a></button>
 
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <header>
+            <h2>Tori Lynn Mchenry</h2>
+        </header>
+
+        <section>
+            <nav>
+                <ul>
+                    <div class="row">
+                        <div class="col-sm-3;" style="padding: 10px; margin-left: 70px;"><img src=".img/me.jpg" style="width: 150px;" alt="selfie">
+                        </div>
+                        <div class="col-sm-3;" style="padding: 10px;"><img src=".img/ahwatukee.png" style="width: 150px;"
+                                alt="Ahwatukee"></div>
+                        <div class="col-sm-3;" style="padding: 10px; margin-left: 25px;"> <img src=".img/myCar.png" style="width: 200px;"
+                                alt="chevySonic"></div>
+                        <div class="col-sm-3;" style="padding: 10px;"><img src=".img/bello.png" style="width: 175px;" alt="myDog">
+                        </div>
+      
+                </ul>
             </nav>
 
-            <div class="container-fluid" style="color: rgb(255, 255, 255);">
-                <h3>About Me</h3>
-                <p>My name is Tori, I've lived all over the West side of Phoenix, I am currenlty living in Ahwatukee.
-                     I own a small orange car that has a manual transmision that my Mother made me learn.
-                     And my favorite little pooch in my life is this floppy boy, Bello.
-                     </p>
-                <div class="row">
-                  <div class="col-sm-3; float-left;"><img src="./.img/me.jpg" style="width: 200px;" alt="selfie"></div>
-                  <div class="col-sm-3; float-right;"><img src="./.img/Ahwatukee.png" style="width: 200px;" alt="Ahwatukee"></div>
-                  <div class="col-sm-3; float-right;"> <img src="./.img/myCar.png" style="width: 300px;" alt="chevySonic"></div>
-                  <div class="col-sm-3; float-right;"><img src="./.img/bello.png" style="width: 250px;" alt="myDog"></div>
-                  
-                  
-                </div>
-              </div>
-        
-        </div>
-    </div>
+            <article>
+                <h3>About Me:</h3>
+                <p>Hello, my name is Tori!</p>
+                <p> I've lived all over the West side of Phoenix, I am currenlty living in Ahwatukee.</p>
+                <p>I love to hike up South Mountain by my house. Here is a picture of the ladscape that I took.</p>
+                <p> I own a small orange car that has a manual transmision, that incredibily fun to drive!</p>
+                <p>The last picture is of my favorite pooch, Bello.</p>
+                <p>I am currently in school to become a coding languge expert.</p>
+                <p> Check out the rest of my page in the top right corner!</p>
+            </article>
+        </section>
 
-
-
-
+        <footer>
+            <p>Thank you for visiting ^-^</p>
+        </footer>
+</div>
 </body>
 
 </html>
